@@ -3,6 +3,13 @@
 <head>
 	<title>onFyre</title>
 
+	<!-- jQuery CDN -->
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.js"
+	  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+	  crossorigin="anonymous"></script>
+
+
 	<!-- font awesome -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -13,34 +20,66 @@
 </head>
 <body>
 	<div class="container-fluid" style="background-color: black">
-		<div id="header" class="offset-md-1 col-md-10">
+		<div id="header" class="col-md-12">
 			<div class="row">
-				<div class="col-md-12">
-					<h1 style="color: white; display: inline;">on<span style="color: red;">Fyre</span></h1><img src="onfyre_red.jpg" style="height: 50px; display: inline"><h1 style="color: white; display: inline;">Gaming</h1>
+				<div class="offset-md-1 col-md-10">
+					<h1 style="color: white; display: inline;">on<span style="color: red;">Fyre</span></h1><img src="onfyre_red.jpg" style="height: 50px; display: inline; bottom: 10px; position: relative;"><h1 style="color: white; display: inline;">Gaming</h1>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
-					<div class="nav-main col-md-6">
-						<button class="center">Home</button>
-						<button class="center">Players</button>
-						<button class="center">Guides</button>
-						<button class="center">Streams</button>
-						<button class="center">Galleries</button>
-						<button class="center">Videos</button>
-					</div>
-					<div class="nav-social col-md-6">
-						<i class="fa fa-twitch fa-lg" aria-hidden="true" style="color: #7D5BBE;"></i>
-						<i class="fa fa-facebook-official fa-lg" aria-hidden="true" style="color: #3B5998"></i>
-						<i class="fa fa-twitter-square fa-lg" aria-hidden="true" style="color: #1DA1F2"></i>
-						<i class="fa fa-youtube-play fa-lg" aria-hidden="true" style="color: #E62117"></i>
+				<div class="col-md-12 navigation-bar">
+					<div class="row">
+						<div class="nav-main offset-md-1 col-md-8">
+							<button class="center">Home</button>
+							<button class="center">Players</button>
+							<button class="center">Guides</button>
+							<button class="center">Streams</button>
+							<button class="center">Galleries</button>
+							<button class="center">Videos</button>
+						</div>
+						<div class="nav-social col-md-3">
+							<i class="fa fa-twitch fa-2x" aria-hidden="true" style=""></i>
+							<i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+							<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+							<i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="wrapper offset-md-1 col-md-10">
 			<div class="row">
+				<div class="col-md-12 carousel">
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					  <ol class="carousel-indicators">
+					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					  </ol>
+					  <div class="carousel-inner" role="listbox">
+					    <div class="carousel-item active">
+					      <img class="d-block img-fluid" src="placeholder.jpg" alt="First slide">
+					    </div>
+					    <div class="carousel-item">
+					      <img class="d-block img-fluid" src="placeholder.jpg" alt="Second slide">
+					    </div>
+					    <div class="carousel-item">
+					      <img class="d-block img-fluid" src="placeholder.jpg" alt="Third slide">
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+				</div>
 				<div class="left-main col-md-8">
+					<div class="row">
+					</div>
 					<div class="row">
 						<div class="article-feature col-md-12">
 							<h2>Title</h2>
@@ -55,12 +94,16 @@
 					</div>
 				</div>
 				<div class="right-main offset-md-1 col-md-3">
+					<h3>Instagram</h3>
+					<img src="placeholder.jpg" style="height: 300px; width: 100%">
+					<h3>Twitter</h3>
+					<img src="placeholder.jpg" style="height: 300px; width: 100%">
 				</div>
 			</div>
 		</div>
 		<div id="footer" class="offset-md-1 col-md-10">
 			<div class="row">
-				<div class="col-md-4 offset-md-1">
+				<div class="col-md-4 offset-md-1 sitemap">
 					<div class="row">
 						<div>
 							<h3>Sitemap</h3>
