@@ -86,7 +86,7 @@ button:focus {outline:0;}
   background-color: #161616;
   border-radius: 10px;
   margin-top: 50px;
-  padding: 50px;
+  padding: 50px; 
 }
 
 #footer h3{
@@ -126,4 +126,29 @@ button:focus {outline:0;}
 .carousel{
   margin-bottom: 30px;
   z-index: 0;
+}
+
+.smedia{
+  margin: 2%;
+  transform:scale(0.8,0.8);
+  opacity: 0.8;
+  transition: transform 0.25s;
+  -webkit-transition: transform 0.25s;
+}
+
+.smedia:hover{
+  transform:scale(1.1,1.1);
+  opacity: 1;
+}
+
+.nav-button{
+  cursor:pointer;
+  opacity: 0.8;
+  transition: transform 0.25s;
+  -webkit-transition: transform 0.25s;
+}
+
+.nav-button:hover{
+  opacity: 1;
+  transform:scale(1.1,1.1);
 }
