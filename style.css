@@ -125,4 +125,5 @@ button:focus {outline:0;}
 
 .carousel{
   margin-bottom: 30px;
+  z-index: 0;
 }
